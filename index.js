@@ -11,7 +11,7 @@ app.get('/', (request, response) => {
 })
 
 app.get('/season/:id', (request, response) => {
-  const season = shows.find((season) => season.number === parseInt(request.params.id))
+  const season = shows.seasons.find((season) => season.number === parseInt(request.params.id))
 
   return response.render('season', { season })
 })
