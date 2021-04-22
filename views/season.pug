@@ -2,18 +2,20 @@ html
   include partials/head.pug
   body
     h1 Kim's Convenience
-    h2= `Season ${season.number}`
+    h3= `Season ${season.number}`
     table
-      tr
-        th No.
-        th Title
-        th Director
-      for episode in season.episodes
+      thead 
         tr
-          td= episode.number
-          td= episode.title  
-          td= episode.director
-        tr
-          td= episode.synopsis
+          th No.
+          th Title
+          th Director
+      tbody 
+        for episode in season.episodes
+          tr
+            td(id='epNum')= episode.number
+            td(id='epName')= episode.title  
+            td(id='epDir')= episode.director
+          tr
+            td(id='synopsis' colspan='3')= episode.synopsis
           
 

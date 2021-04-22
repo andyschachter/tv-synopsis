@@ -1,3 +1,42 @@
 h2 {
   margin-left: 25px ;
 }
+
+h3 {
+  font-size: x-large;
+  text-align: center;
+}
+
+ul {
+  margin-left: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+table, th, td {
+  font-family:'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+table {
+  margin-left: 275px;
+  margin-right: 275px;
+}
+
+th {
+  font-style: inherit;
+  background-color: cornflowerblue;
+  color: white
+}
+
+#epNum, #epName, #epDir {
+  padding-left: 25px;
+}
+
+#synopsis {
+  padding-left: 10px;
+  padding-right: 15px;
+}
