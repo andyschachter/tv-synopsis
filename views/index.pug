@@ -6,4 +6,12 @@ html
     ul
       for writer in shows.developedBy 
         li= writer
+    h2 Starring
+    ul
+      for actor in shows.starring
+        li= actor
+    h2 Seasons
+    ul
+      for season in shows.seasons
+        li= `Season ${season.number}`
     
