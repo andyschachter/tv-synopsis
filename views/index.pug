@@ -13,5 +13,6 @@ html
     h2 Seasons
     ul
       for season in shows.seasons
-        li= `Season ${season.number}`
+        li
+          a(href=`/season/${season.number}`)=`Season ${season.number}`
     

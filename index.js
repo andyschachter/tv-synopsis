@@ -10,6 +10,8 @@ app.get('/', (request, response) => {
   response.render('index', { shows })
 })
 
+
+
 app.all('*', (request, response) => {
   return response.sendStatus(404)
 })
