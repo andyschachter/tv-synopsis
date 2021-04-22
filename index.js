@@ -10,7 +10,11 @@ app.get('/', (request, response) => {
   response.render('index', { shows })
 })
 
+app.get('/season/:id', (request, response) => {
+  const season = shows.find((season) => season.number === parseInt(request.params.id))
 
+  return response.render('season', { season })
+})
 
 app.all('*', (request, response) => {
   return response.sendStatus(404)
