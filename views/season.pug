@@ -1,0 +1,21 @@
+html
+  include partials/head.pug
+  body
+    h1(class='seasonHeader') Kim's Convenience 
+    h1(class='tableHead')= `Season ${season.number}`
+    table
+      thead 
+        tr
+          th No.
+          th Title
+          th Director
+      tbody 
+        for episode in season.episodes
+          tr
+            td(class="epDetails")= episode.number
+            td(class="epDetails")= episode.title  
+            td(class="epDetails")= episode.director
+          tr
+            td(class="synopsis" colspan='3')= episode.synopsis
+          
+

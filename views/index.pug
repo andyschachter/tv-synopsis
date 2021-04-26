@@ -1,0 +1,18 @@
+html 
+  include partials/head.pug 
+  body(class='index')
+    h1= shows.title
+    h2 Developed By 
+    ul
+      for writer in shows.developedBy 
+        li= writer
+    h2 Starring
+    ul
+      for actor in shows.starring
+        li= actor
+    h2 Seasons
+    ul
+      for season in shows.seasons
+        li
+          a(href=`/season/${season.number}`)=`Season ${season.number}`
+    
