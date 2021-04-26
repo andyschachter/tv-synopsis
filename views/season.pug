@@ -1,8 +1,8 @@
 html
   include partials/head.pug
   body
-    h1 Kim's Convenience
-    h3= `Season ${season.number}`
+    h1(class='seasonHeader') Kim's Convenience 
+    h1(class='tableHead')= `Season ${season.number}`
     table
       thead 
         tr
@@ -12,10 +12,10 @@ html
       tbody 
         for episode in season.episodes
           tr
-            td(id='epNum')= episode.number
-            td(id='epName')= episode.title  
-            td(id='epDir')= episode.director
+            td(class="epDetails")= episode.number
+            td(class="epDetails")= episode.title  
+            td(class="epDetails")= episode.director
           tr
-            td(id='synopsis' colspan='3')= episode.synopsis
+            td(class="synopsis" colspan='3')= episode.synopsis
           
 

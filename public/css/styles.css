@@ -1,9 +1,19 @@
+body {
+  background-color: black;
+  color: white;
+  background-image: url('../Kims_Convenience_Marvel.jfif');
+  background-size: contain;
+}
+
+.index, .seasonHeader, .tableHead {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
 h2 {
   margin-left: 25px ;
 }
 
-h3 {
-  font-size: x-large;
+.tableHead {
   text-align: center;
 }
 
@@ -11,14 +21,23 @@ ul {
   margin-left: 25px;
 }
 
-a {
+a:link {
   text-decoration: none;
+  color:magenta;
+}
+
+a:visited {
+  text-decoration: none;
+  color:mediumturquoise;
 }
 
 table, th, td {
+  background:rgb(90, 1, 1);
+  color: white;
+  opacity: 1;
   font-family:'Times New Roman', Times, serif;
   border-collapse: collapse;
-  border: 1px solid black;
+  border: 1px solid white;
 }
 
 table {
@@ -28,15 +47,15 @@ table {
 
 th {
   font-style: inherit;
-  background-color: cornflowerblue;
-  color: white
+  background-color:black;
+  color: white;
 }
 
-#epNum, #epName, #epDir {
+.epDetails {
   padding-left: 25px;
 }
 
-#synopsis {
+.synopsis {
   padding-left: 10px;
   padding-right: 15px;
 }
