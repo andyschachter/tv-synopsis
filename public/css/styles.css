@@ -34,7 +34,7 @@ a:visited {
 table, th, td {
   background:rgb(90, 1, 1);
   color: white;
-  opacity: 1;
+  opacity: .9;
   font-family:'Times New Roman', Times, serif;
   border-collapse: collapse;
   border: 1px solid white;
